@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+<title>Strucker</title>
+<script src="Strucker.js"></script>
+<script src="Bot.js"></script>
+</head>
+
+
+
+<body onload="initialize();" onresize="draw();" leftmargin="0px" topmargin="0px" marginwidth="0px" marginheight="0px" bgcolor="#009900" style="overflow:hidden;">
+<canvas onclick="selectCard(this, event);" id="player1"></canvas>
+<canvas onclick="selectCard(this, event);" id="player2"></canvas>
+<canvas onclick="selectCard(this, event);" id="player3"></canvas>
+<canvas onclick="selectCard(this, event);" id="player4"></canvas>
+<canvas id="table"></canvas>
+<button type="button" id="next" onclick="playCards(psel);">Play Cards</button>
+<div id="handstatus" style="color:blue; position:absolute;"></div>
+</body>
+</html>
